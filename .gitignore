@@ -1,0 +1,4 @@
+RestaurantManagementSystem/db.sqlite3
+RestaurantManagementSystem/RestaurantManagementSystem/__pycache__/
+RestaurantManagementSystem/rms/__pycache__/
+RestaurantManagementSystem/rms/migrations/__pycache__/

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+    <form onsubmit="location.href='http://127.0.0.1:8000/' + document.getElementById('table').value; return false;">
+        <div class="form-group" style="text-align: left; margin: 0; position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%);">
+            <label for="table" style="font-weight: bold; font-size: 20px;">Which table do you want to view?</label><br>
+            <select class="form-contol" id="table">
+                <option selected>Choose a Table</option>
+                <option value="menu">Menu</option>
+                <option value="manager">Manager</option>
+                <option value="chef">Chef</option>
+                <option value="cashier">Cashier</option>
+                <option value="waiter">Waiter</option>
+                <option value="customer">Customer</option>
+                <option value="bill">Bill</option>
+            </select><br><br>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>

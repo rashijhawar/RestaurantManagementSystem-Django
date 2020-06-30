@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Table for Menu</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+    <table class="table table-striped table-bordered" style = "width: 70%; margin-left: 15%; margin-right: 15%;">
+        <caption style="caption-side: top; text-align: left; font-weight: bold; font-size: 40px; color: black;">Menu</caption>
+        <thead class="thead-dark">
+            <th>Item Number</th>
+            <th>Item Name</th>
+            <th>Price</th>
+        </thead>
+        <tbody>
+            {% for item in item_list %}
+                <tr> 
+                    <td>{{ item.itemNo }}</td>
+                    <td>{{ item.itemName }}</td>
+                    <td>{{ item.price }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+
+</html>
